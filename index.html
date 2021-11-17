@@ -8,6 +8,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./css/style-header.css">
+        <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" href="./css/extrato.css">
     </head>
 
 
@@ -28,7 +30,68 @@
                 </ul>
             </nav>
         </header>
-        <script src="./script/script.js"></script>
+        <body>
+            <section>          
+                <form>
+                    <div class="campo">
+                        <label for="transacao">Tipo da Mercadoria</label>
+                        <select id="transacao" required>
+                            <option selected disabled value="">Selecione</option>
+                            <option>Compra</option>
+                            <option>Venda</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <Label>Nome da mercadoria</Label>
+                        <input placeholder="Input" type="text" name="mercadoria" id="mercadoria">
+                    </div>
+                    <div class="campo">
+                        <Label>Valor</Label>
+                        <input placeholder="R$ 0,00" type="text" name="valor" id="valor">
+                    </div>
+                    <button class="botao" type="submit" onsubmit="">Adicionar Transação</button>    
+                </form>                
+            </section>
+            <br/>
+            <hr/>
+            <br/>
+            <section>
+                <h3>Extrato de transações</h3>
+
+                <table id="extrato">
+                    <tr>
+                        <th> </th>
+                        <th>Mercadoria</th>
+                        <th>Valor</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Lorem ipsum dolor sit amet consectetur</td>
+                        <td>R$12.999,99</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Quis nostrud exercitation</td>
+                        <td>R$99,99</td>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Lorem ipsum</td>
+                        <td>R$9,99</td>
+                    </tr>
+                    <tr id="total">
+                        <td></td>
+                        <td><strong>Total</strong></td>
+                        <td>R$12.909,99<br/>LUCRO</td>
+                    </tr>
+            
+
+                </table>
+
+            </section>
+
+            <script src="./script/script.js"></script>
 
     </body>
 </html>

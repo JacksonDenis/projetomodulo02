@@ -49,22 +49,10 @@ a:hover {
     justify-content: space-between;
     background: #E0E0E0;
 }
-#menu {
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-}
-
-#menu a {
-    display: block;
-    padding: .5rem;
-}
 
 #btn-mobile {
     display: none
 }
-
-@media (max-width:600px) {
     #menu {
         display: block;
         position: absolute;
@@ -122,4 +110,3 @@ a:hover {
         transform: rotate(-135deg);
         top: -7px;
       }
-}

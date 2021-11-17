@@ -1,0 +1,50 @@
+form {
+    display: block;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+    font-family: Lato;
+
+}
+label {
+    display: flex;  
+}
+
+.botao {
+    width: 92%;
+    height: 32px;
+    font-size: 1.2em;
+    background: #333333;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    margin: 1%;
+    margin-left: 3%;
+}
+.botao:hover {
+    background: #8a8a8a;
+    box-shadow: inset 2px 2px 2px rgba(88, 88, 88, 0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+input{
+    margin: 3%;
+    width: 90%;
+    padding: 0.5em ;
+    font-weight: 80%;
+    border-radius: 5px;
+   
+}
+select{
+    margin: 3%;
+    width: 92%;
+    padding: 0.5em ;
+    border-radius: 5px;
+}
